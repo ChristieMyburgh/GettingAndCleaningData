@@ -51,8 +51,8 @@
 
 ###Create final tidy set for the assignment.
 
-> * Line 58 uses the function ddply to calculate the mean for each variable for each activity 
-> and subject and assign the result to table *tidy_set_mean*.
-> * Line 61 dumps the result to disk to file *"tidy_set_mean.txt"*
-> * Line 64 returns *tidy_set_mean* table. 
+> * Line 58 uses the function ddply to calculate the mean for each variable for each subject and each activity 
+> and assign the result to table *tidy_set_mean*.
+> * Line 61 dumps the result to disk to file *"tidy _ set _ mean.txt"*
+> * Line 64 returns *tidy _ set _ mean* table. 
 
