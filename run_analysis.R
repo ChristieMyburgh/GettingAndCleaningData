@@ -32,7 +32,7 @@ run_analyses <- function()
     
     #Now merging all the training and testing tables into one large table
     
-    #Step 1 - rbind the 2 training tables
+    #Step 1 - rbind the 2 measurement tables.
     training_set <- rbind(x_train, x_test)
     
     #Step 2 - rbind the 2 activity tables.
