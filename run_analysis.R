@@ -61,5 +61,5 @@ run_analyses <- function()
     write.table(tidy_set_mean,"tidy_set_mean.txt",row.name=FALSE) 
     
     #Return the final table.
-    return (tidy_set_mean)
+    tidy_set_mean
 }
