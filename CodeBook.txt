@@ -18,7 +18,7 @@ activityrecognition@smartlab.ws
 www.smartlab.ws
 ==================================================================
 
-For this study the training and test data sets were merged and only the measurements of the mean and standard deviation for each measurement were extracted and used.
+For this study the training and test data sets were merged and only the measurements of the mean and standard deviation for each measurement were extracted and used (i.e. all features that ends with "mean or std" after brackets have been stripped).
 The mean fore each variable was calculated by subject by activity.
 ----------------------------------------------------------------------------------------------
 
