@@ -24,7 +24,8 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. 
 The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-For this study the training and test data sets were merged. 
+For the Course Assignment the training and test data sets were merged. 
+(y_test.txt, y_train.txt, X_test.txt, X_train, subject_test.txt, subject_train.txt)
 For the "tidy_set_mean.txt" tidy data produced, only variables which represent the magnitude of the three-dimensional signals were used as well as their frequency domain variables.
 (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag, fBodyAccMag, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag)
 Only the mean and standard deviation for each of these were extracted and used.

@@ -2,11 +2,7 @@
 library(plyr)
 library(dplyr)
 run_analyses <- function()
-{
-    #This function performs the ananlyses as described in Course Assignment for
-    #Getting and Cleaning Data at Johns Hopkins.
-    #Data set used => "UCI HAR Dataset"
-    
+{    
     #Reading, cleaning and create a filter from "features" to select only
     #columns that contains the mean and standard deviation.
     features <- read.table("features.txt")
