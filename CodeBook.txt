@@ -17,6 +17,13 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
 ==================================================================
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
+Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. 
+The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).
+The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. 
+The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 For this study the training and test data sets were merged and only the measurements of the mean and standard deviation for each measurement were extracted and used (i.e. all features that ends with "mean or std" after brackets have been stripped).
 The mean fore each variable was calculated by subject by activity.
@@ -74,109 +81,119 @@ The mean for each of the following variables were calculated by subject by activ
 tbodyaccmagmean
 			min = -0.0009713947
 			max =  0.6446043251
-			unit - Time domain signal.
+			Time Domain Variable
+			unit - standard gravity units 'g'
 			Mean of the magnitude (Euclidean norm) of linear body acceleration signal.
 						
 tbodyaccmagstd
 			min = -0.01357712
 			max = 0.42840592
-			unit - Time domain signal.
+			Time domain signal.
+			unit - standard gravity units 'g'
 			Standard deviation of the magnitude (Euclidean norm) of the linear body acceleration signal.
 
 tgravityaccmagmean
 		min = -0.0009713947
 		max = 0.6446043251
-		unit - Time domain signal.
+		Time domain signal.
+		unit - standard gravity units 'g'
 		Mean of the magnitude (Euclidean norm) of the gravity acceleration signal.
 						
 tgravityaccmagstd
 		min = -0.01357712
 		max = 0.42840592
-		unit - Time domain signal.
+		Time domain signal.
+		unit - standard gravity units 'g'
 		Standard deviation of the magnitude (Euclidean norm) of the gravity acceleration signal.
 
 tbodyaccjerkmagmean
 		min = -0.017978463
 		max = 0.434490401
-		unit - Time domain signal.
+		Time domain signal.
+		unit - metres/second^3
 		Mean of  the magnitude (Euclidean norm) of the jerk signals. 
 
 tbodyaccjerkmagstd
 		min = -0.02028505
 		max = 0.45061207
-		unit - Time domain signal.
+		Time domain signal.
+		unit - metres/second^3
 		Standard deviation of  the magnitude (Euclidean norm) of the jerk signals.
 						
 tbodygyromagmean
 		min = -0.003102438
 		max = 0.418004609
-		unit - Time domain signal.
+		Time domain signal.
+		unit - radians/second
 		Mean of magnitude (Euclidean norm) of angular acceleration signals.  
 
 tbodygyromagstd
 		min = -0.02184632
 		max = 0.29997598
-		unit - Time domain signal.
+		Time domain signal.
+		unit - radians/second
 		Standard deviation of magnitude (Euclidean norm) of angular acceleration signals.
 
 tbodygyrojerkmagmean
 		min = -0.04631178
 		max = 0.08758166
-		unit - Time domain signal.
+		Time domain signal.
+		unit - radians/second^3
 		Mean of magnitude (Euclidean norm) of angular jerk signals.
 
 tbodygyrojerkmagstd
 		min = -0.04389850
 		max = 0.25017320
-		unit - Time domain signal.
+		Time domain signal.
+		unit - radians/second^3
 		Standard deviation of magnitude (Euclidean norm) of angular jerk signals.
 
 fbodyaccmagmean
 		min = -0.003533418
 		max = 0.586637551
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodyaccmag.
 						
 
 fbodyaccmagstd
 		min = -0.0214787882
 		max = 0.1786845809
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodyaccmag.
 
 fbodybodyaccjerkmagmean
 		min = -0.0128823827
 		max = 0.5384048461
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodyaccjerkmag.
 
 fbodybodyaccjerkmagstd
 		min = -0.01395391
 		max = 0.31634642
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodyaccjerkmag.
 
 fbodybodygyromagmean
 		min = -0.000362729
 		max = 0.2039797648
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyromag.
 
 fbodybodygyromagstd
 		min = -0.06147658
 		max = 0.23665966
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodygyromag.
 
 fbodybodygyrojerkmagmean
 		min = -0.02290453
 		max = 0.14661857
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
 						 
 
 fbodybodygyrojerkmagstd
 		min = -0.03985738				
 		max = 0.28783462
-		unit - Frequency domain signal.
+		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
