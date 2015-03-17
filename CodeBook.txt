@@ -1,4 +1,3 @@
-CODE BOOK FOR "tidy_set_mean"
 
 *******************STUDY DESIGN*****************
 
@@ -163,6 +162,7 @@ fbodyaccmagmean
 		min = -0.003533418
 		max = 0.586637551
 		Frequency domain signal.
+		unit - standard gravity units 'g'
 		Mean of Fast Fourier Transform (FFT) applied to tbodyaccmag.
 						
 
@@ -170,36 +170,42 @@ fbodyaccmagstd
 		min = -0.0214787882
 		max = 0.1786845809
 		Frequency domain signal.
+		unit - standard gravity units 'g'
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodyaccmag.
 
 fbodyaccjerkmagmean
 		min = -0.0128823827
 		max = 0.5384048461
 		Frequency domain signal.
+		unit - metres/second^3
 		Mean of Fast Fourier Transform (FFT) applied to tbodyaccjerkmag.
 
 fbodyaccjerkmagstd
 		min = -0.01395391
 		max = 0.31634642
 		Frequency domain signal.
+		unit - metres/second^3
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodyaccjerkmag.
 
 fbodygyromagmean
 		min = -0.000362729
 		max = 0.2039797648
 		Frequency domain signal.
+		unit - radians/second
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyromag.
 
 fbodygyromagstd
 		min = -0.06147658
 		max = 0.23665966
 		Frequency domain signal.
+		unit - radians/second
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodygyromag.
 
 fbodygyrojerkmagmean
 		min = -0.02290453
 		max = 0.14661857
 		Frequency domain signal.
+		unit - radians/second^3
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
 						 
 
@@ -207,6 +213,7 @@ fbodygyrojerkmagstd
 		min = -0.03985738				
 		max = 0.28783462
 		Frequency domain signal.
+		unit - radians/second^3
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
 
 		
