@@ -25,13 +25,11 @@
 
 >  * Line 15 loads the activity data for the test group into table *y_test*.
 >  * Line 16 loads the activity data for the training group into table *y_train*.
->  * Line 19loads the measuremant data for the test group into table *x_test* and assign 
->  column names to the set using the *features* vector.
->  * Line 20 loads the measurement data for the training group int table *x_train* and assign 
->column names to the set using the *features* vector.
-> * Line 23 loads the *subject* data for the test group into table *subject_test*.
-> * Line 24 loads the *subject* data for the train group into table *subject_train*.
-> * Line 27 loads the *activity labels* data into table *activity_labels*.
+>  * Line 19loads the measuremant data for the test group into table *x_test* and assign column names to the set using the *features* vector.
+>  * Line 20 loads the measurement data for the training group int table *x_train* and assign column names to the set using the *features* vector.
+>  * Line 23 loads the *subject* data for the test group into table *subject_test*.
+>  * Line 24 loads the *subject* data for the train group into table *subject_train*.
+>  * Line 27 loads the *activity labels* data into table *activity_labels*.
 
 #####Merging of *test and training* tables.
 
