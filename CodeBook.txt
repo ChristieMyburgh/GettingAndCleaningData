@@ -25,8 +25,19 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. 
 The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-For this study the training and test data sets were merged and only the measurements of the mean and standard deviation for each measurement were extracted and used (i.e. all features that ends with "mean or std" after brackets have been stripped).
-The mean fore each variable was calculated by subject by activity.
+For this study the training and test data sets were merged. 
+For the "tidy_set_mean.txt" tidy data produced, only variables which represent the magnitude of the three-dimensional signals were used as well as their frequency domain variables.
+(tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag, fBodyAccMag, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag)
+Only the mean and standard deviation for each of these were extracted and used.
+The mean for each variable was calculated by subject by activity.
+
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 ----------------------------------------------------------------------------------------------
 
 *****************CODE BOOK*******************
@@ -161,39 +172,41 @@ fbodyaccmagstd
 		Frequency domain signal.
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodyaccmag.
 
-fbodybodyaccjerkmagmean
+fbodyaccjerkmagmean
 		min = -0.0128823827
 		max = 0.5384048461
 		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodyaccjerkmag.
 
-fbodybodyaccjerkmagstd
+fbodyaccjerkmagstd
 		min = -0.01395391
 		max = 0.31634642
 		Frequency domain signal.
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodyaccjerkmag.
 
-fbodybodygyromagmean
+fbodygyromagmean
 		min = -0.000362729
 		max = 0.2039797648
 		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyromag.
 
-fbodybodygyromagstd
+fbodygyromagstd
 		min = -0.06147658
 		max = 0.23665966
 		Frequency domain signal.
 		Standard deviation of Fast Fourier Transform (FFT) applied to tbodygyromag.
 
-fbodybodygyrojerkmagmean
+fbodygyrojerkmagmean
 		min = -0.02290453
 		max = 0.14661857
 		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
 						 
 
-fbodybodygyrojerkmagstd
+fbodygyrojerkmagstd
 		min = -0.03985738				
 		max = 0.28783462
 		Frequency domain signal.
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
+
+		

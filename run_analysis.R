@@ -57,6 +57,14 @@ run_analyses <- function()
     #Finally calculate the mean by ID by activity
     tidy_set_mean <- ddply(tidy_set, .(subject, activity), numcolwise(mean))
     
+    #Correct some column names
+    colnames(tidy_set_mean)[colnames(tidy_set_mean)=="fbodybodyaccjerkmagmean"] <- "fbodyaccjerkmagmean"
+    colnames(tidy_set_mean)[colnames(tidy_set_mean)=="fbodybodyaccjerkmagstd"] <- "fbodyaccjerkmagstd"
+    colnames(tidy_set_mean)[colnames(tidy_set_mean)=="fbodybodygyromagmean"] <- "fbodygyromagmean"
+    colnames(tidy_set_mean)[colnames(tidy_set_mean)=="fbodybodygyromagstd"] <- "fbodygyromagstd"
+    colnames(tidy_set_mean)[colnames(tidy_set_mean)=="fbodybodygyrojerkmagmean"] <- "fbodygyrojerkmagmean"
+    colnames(tidy_set_mean)[colnames(tidy_set_mean)=="fbodybodygyrojerkmagstd"] <- "fbodygyrojerkmagstd"
+    
     #Dump data to disk
     write.table(tidy_set_mean,"tidy_set_mean.txt",row.name=FALSE) 
     
