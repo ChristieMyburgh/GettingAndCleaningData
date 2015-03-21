@@ -51,7 +51,7 @@
 
 > * Line 54 uses the function ddply to calculate the mean for each variable for each subject and each activity 
 > and assign the result to table *tidy_set_mean*.
-> * Lines 57 to 62 renames some columns to more closely resemble raw data set.
+> * Lines 57 to 62 renames some columns to be more readable.
 > * Line 65 dumps the result to disk to file *"tidy _ set _ mean.txt"*
 > * Line 68 returns *tidy_set _ mean* table. 
 
