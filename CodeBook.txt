@@ -148,14 +148,14 @@ tbodygyrojerkmagmean
 		min = -0.04631178
 		max = 0.08758166
 		Time domain signal.
-		unit - radians/second^3
+		unit - radians/second^2
 		Mean of magnitude (Euclidean norm) of angular jerk signals.
 
 tbodygyrojerkmagstd
 		min = -0.04389850
 		max = 0.25017320
 		Time domain signal.
-		unit - radians/second^3
+		unit - radians/second^2
 		Standard deviation of magnitude (Euclidean norm) of angular jerk signals.
 
 fbodyaccmagmean
@@ -205,7 +205,7 @@ fbodygyrojerkmagmean
 		min = -0.02290453
 		max = 0.14661857
 		Frequency domain signal.
-		unit - radians/second^3
+		unit - radians/second^2
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
 						 
 
@@ -213,7 +213,7 @@ fbodygyrojerkmagstd
 		min = -0.03985738				
 		max = 0.28783462
 		Frequency domain signal.
-		unit - radians/second^3
+		unit - radians/second^2
 		Mean of Fast Fourier Transform (FFT) applied to tbodygyrojerkmag.
 
 		
